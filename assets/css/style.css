@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --primary-color: #ffffff;
+}
+
+body {
+    background-color: black !important;
+}
+
+.main_container {
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    height: 262px;
+    object-fit: cover;
+}
+
+.win_cards_container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.trigger-box {
+    background-color: black;
+    color: white;
+    border: 1px solid cyan;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.trigger-box .user {
+    font-size: 16px;
+}
+
+.trigger-box .won {
+    font-size: 18px;
+    color: yellow;
+}
+
+
+.bottom_menu {
+    background-color: white;
+    padding: 12px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.buy_now_btn {
+    padding: 6px 12px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: all 300ms linear;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.buy_now_btn:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+
+
+.card-img-top {
+    aspect-ratio: 16 / 9;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-content {
+    background-color: black !important;
+    border: 2px solid #02faf8 !important;
+    transform: translateY(90%) !important;
+}
+
+.btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: #000;
+    background: transparent url(/assets/images/svg/close_btn.svg) center / 2em auto no-repeat !important;
+    border: 0;
+    border-radius: .375rem;
+    opacity: unset !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid #02faf8 !important;
+}
+
+.user_img {
+    width: 55px;
+    border-radius: 50%;
+    border: 1px solid #02faf8;
+}
+
+.modal_body_data {
+    border: 1px solid #02faf8;
+    padding: 8px;
+}
+
+.modal {
+    --bs-modal-width: 350px !important;
+}
+
+/* ============= invite page css ======================= */
+.main_card {
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+.content_card {
+    background-color: black;
+    padding: 12px;
+    border: 1px solid #02faf8;
+}
+
+.copy_btn {
+    background-color: white;
+    padding: 8px 16px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 300ms linear;
+}
+
+.copy_btn:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.top_indicator {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+}
+
+.scanner_box {
+    background-color: black;
+    padding: 20px;
+    display: inline-block;
+}
+
+.qr_img {
+    max-width: 200px;
+    width: 100%;
+}
+
+
+/* profile css */
+.profile_img {
+    max-width: 120px;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.profile_card {
+    background-color: black;
+    padding: 15px;
+}
+
+.wallet_btns {
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.profile_pages {
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    border: 2px solid transparent;
+    transition: all 300ms linear;
+}
+
+.profile_pages:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.search-filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.filter-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#filterDropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 10;
+}
+
+#filterDropdown.visible {
+    display: block;
+}
+
+.apply-filter {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#filterBtn:active+.filter-dropdown {
+    display: block;
+}
+
+.filter-dropdown::before {
+    content: '\2193';
+    /* Down arrow symbol */
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.info_tab {
+    border: 2px solid white;
+    padding: 8px;
+    text-align: center;
+}
+
+.team_tab {
+    background-color: white;
+    padding: 12px;
+    margin-top: 16px;
+}
+
+.team_tab_btn {
+    background-color: transparent;
+    padding: 8px 12px;
+    border: 2px solid black;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 300ms linear;
+    width: 100%;
+}
+
+.team_tab button.active {
+    background-color: black;
+    color: white;
+}
+
+table,
+td {
+    border: 2px solid white !important;
+}
+
+.data_table td {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    padding: 4px;
+}
+
+.transaction_table td {
+    border: 2px solid black !important;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    padding: 4px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.bank_input {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid black;
+    margin-top: 16px;
+}
+
+.submit_btn {
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: black;
+    border: 2px solid transparent;
+    transition: all 300ms linear;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.submit_btn:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+.bottom_menu a.active {
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding-left: 2px;
+}
+
+.bottom_menu a {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding-left: 2px;
+}
+
+@media (max-width:576px) {
+    .overflow_scroll {
+        overflow: scroll;
+    }
+
+    .wallet_btns {
+        padding: 6px;
+    }
+
+    .profile_pages {
+        padding: 6px;
+    }
+
+    .qr_img {
+        max-width: 150px;
+    }
+
+    .scanner_box {
+        padding: 10px;
+    }
+
+    .p_4px {
+        padding: 4px;
+    }
+
+    .data_table td {
+        font-size: 12px;
+    }
+
+    .info_tab {
+        padding: 4px;
+    }
+
+    .team_tab {
+        padding: 8px;
+        justify-content: center;
+    }
+
+    .team_tab_btn {
+        padding: 4px 8px;
+    }
+
+    .fs_20px {
+        font-size: 20px !important;
+    }
+
+    .bank_input {
+        padding: 5px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    .card-body {
+        padding: 8px !important;
+    }
+
+    .fs_18px {
+        font-size: 18px !important;
+    }
+
+    .fs_16px {
+        font-size: 16px !important;
+    }
+
+    .fs_14px {
+        font-size: 14px !important;
+    }
+
+    .trigger-box .user {
+        font-size: 14px !important;
+    }
+
+    .trigger-box .won {
+        font-size: 16px !important;
+        color: yellow;
+    }
+
+    .buy_now_btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    .w_25px {
+        width: 25px !important;
+    }
+
+    .trigger-box {
+        padding: 5px !important;
+    }
+}
