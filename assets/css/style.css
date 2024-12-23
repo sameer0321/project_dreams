@@ -82,6 +82,34 @@ body {
     color: black;
 }
 
+.rec-amount {
+    cursor: pointer;
+    padding: 10px 0;
+    background-color: black;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.rec-amount:active {
+    background-color: black !important;
+}
+
+.btn-rch {
+    background-color: black !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+    padding: 10px 20px !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+
+.btn-rch:hover {
+    color: #fff !important;
+}
+
 
 
 .card-img-top {
@@ -363,6 +391,15 @@ td {
     border-radius: 5px;
     padding-left: 2px;
 }
+
+.card-app {
+    border-radius: 5px;
+    padding: 7px 15px 15px 15px;
+    background-color: #fff;
+    box-shadow: 0 0.64px 2.13px 0 rgba(0, 0, 0, 0.15);
+
+}
+
 
 @media (max-width:576px) {
     .overflow_scroll {
